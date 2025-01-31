@@ -44,19 +44,9 @@ Ejecuta el siguiente comando para restaurar las dependencias del proyecto:
 dotnet restore
 ```
 
-### 3. Configurar la base de datos (si aplica)
-
-Si el proyecto usa Entity Framework Core y requiere migraciones, ejecuta:
-
-```sh
-dotnet ef database update
-```
-
-Si no tienes la herramienta EF instalada, agrégala con:
-
-```sh
-dotnet tool install --global dotnet-ef
-```
+### 3. Configurar el Key para la api de OpenWeather
+- Dentro de la carpeta Service se encontrara el archivo WeatherService.cs
+- Modificar el valor de la variable ApiKey con la llave de weather api
 
 ## Ejecución
 
